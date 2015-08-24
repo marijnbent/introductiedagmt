@@ -35,6 +35,7 @@ function getGridHandler(gridData) {
         });
         gridArray.push(rectangle);
         google.maps.event.addListener(rectangle, 'click', function () {
+            infowindow.close();
             console.log(this.y + "Y, " + this.x + "X, " + this.id + " ID.");
         });
         }

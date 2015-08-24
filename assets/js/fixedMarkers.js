@@ -19,7 +19,8 @@ function placeFixedMarker(fixedMarkerData) {
     var position = new google.maps.LatLng(fixedMarkerData.lat, fixedMarkerData.lng);
     var fixedMarker = new google.maps.Marker({
         position: position,
-        map: map
+        map: map,
+        icon: "assets/img/icon/infoMarker.png"
     });
     fixedMarkerArray.push(fixedMarker);
 }

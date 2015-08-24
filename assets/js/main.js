@@ -10,6 +10,7 @@ var currentTeamPhoto = getCookie('teamPhoto');
 var currentTeamSelfChosenTeamName = getCookie('teamSelfChosenTeamName');
 var currentPosition;
 var fixedMarkerArray = [];
+var infoWindow;
 
 var teamIdColor = {
     2: "#A8111B", //red

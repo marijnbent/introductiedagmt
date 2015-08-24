@@ -22,7 +22,7 @@ function requestMarkerLocations() {
         $.each(fireData, function (nameOfObject, objectData) {
             if (objectData.active == 1) {
                 var latlng = new google.maps.LatLng(objectData.lat, objectData.lng);
-                addMarker(latlng, objectData.teamId);
+                addMarker(latlng, objectData.teamId, objectData.photo);
                 addColorToGrid(objectData.gridId, objectData.teamId)
             }
             //if (objectData.gridId == currentGrid) {
@@ -39,17 +39,93 @@ function requestMarkerLocations() {
 
 //Create marker with the known location
 
-
-function addMarker(location, teamIdMarker) {
+function addMarker(location, teamIdMarker,photo) {
 
     var teamIcon = teamIdIcon[teamIdMarker];
 
     var marker = new google.maps.Marker({
         position: location,
         icon: teamIcon,
-        map: map
+        map: map,
+        team: currentTeamId
+
     });
-    markers.push(marker);
+
+    // InfoWindow content
+    var contentWindow =
+
+        //Infowindow Container
+        '<div id="iw-container">' +
+            //Infowindow Title
+        '<div class="iw-title">'+teamIdMarker+'</div>' +
+            //Infowindow Content
+        '<div class="iw-content">' +
+            //Infowindow Text
+        '<img src="'+ photo +'" >' +
+            //Infowindow Footer
+        '<div class="iw-footer">Klik op de kaart om dit venster te sluiten</div>' +
+            //Infowindow Closing div
+        '</div>';
+
+
+    // Create new window and content
+    var infowindow = new google.maps.InfoWindow({
+        content: contentWindow,
+        maxWidth: 300
+    });
+
+    // EventListener on click for the marker
+    google.maps.event.addListener(marker, 'click', function () {
+        infowindow.open(map, marker);
+        map.setCenter(marker.getPosition());
+    });
+
+    // EventListener to close the window when you click/tap on the map canvas
+    google.maps.event.addListener(map, 'click', function () {
+        infowindow.close();
+    });
+
+    google.maps.event.addListener(infowindow, 'domready', function () {
+
+        // Reference to the DIV that wraps the bottom of infowindow
+        var iwOuter = $('.gm-style-iw');
+
+        /* Since this div is in a position prior to .gm-div style-iw.
+         * We use jQuery and create a iwBackground variable,
+         * and took advantage of the existing reference .gm-style-iw for the previous div with .prev().
+         */
+        var windowBackground = iwOuter.prev();
+
+        // Removes background shadow DIV
+        windowBackground.children(':nth-child(2)').css({'display': 'none'});
+
+        // Removes white background DIV
+        windowBackground.children(':nth-child(4)').css({'display': 'none'});
+
+        // Moves the infowindow 26px to the right.
+        iwOuter.parent().parent().css({left: '26px'});
+
+        // Moves the arrow 140px to the left margin.
+        windowBackground.children(':nth-child(3)').attr('style', function (i, s) {
+            return s + 'left: 140px !important;'
+        });
+
+        // Changes the desired tail shadow color.
+        windowBackground.children(':nth-child(3)').find('div').children().css({
+            'box-shadow': 'rgba(8, 8, 8, 1) 0px 1px 1px',
+            'z-index': '1'
+
+        });
+
+        // Reference to the div that groups the close button elements.
+        var iwCloseBtn = iwOuter.next();
+        // Apply the desired effect to the close button
+        iwCloseBtn.css({
+            display: 'none'
+        });
+
+        markers.push(marker);
+    });
 }
 
 //gridIdMarker = JUISTE GRID.
