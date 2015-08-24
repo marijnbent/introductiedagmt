@@ -22,5 +22,6 @@ function placeFixedMarker(fixedMarkerData) {
         map: map,
         icon: "assets/img/icon/infoMarker.png"
     });
+
     fixedMarkerArray.push(fixedMarker);
 }
