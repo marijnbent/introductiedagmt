@@ -1,5 +1,7 @@
 
 *.xml
 
+.idea/.name
+
 *.iml
 .idea/.name
