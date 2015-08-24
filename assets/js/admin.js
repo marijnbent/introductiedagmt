@@ -61,7 +61,7 @@ function buildMap() {
                 position: position,
                 map: map,
                 title: markers[i][0],
-                icon:  "assets/img/icon/teamYellowIcon.png"
+                icon: "assets/img/icon/teamYellowIcon.png"
             });
 
             // Allow each marker to have an info window
@@ -81,3 +81,43 @@ function buildMap() {
     google.maps.event.addDomListener(window, 'load', mapInit);
 }
 
+
+//var eventOptions = [
+//    Events = ['Team Yellow took over sector 235',
+//        'Team Yellow took over sector 235',
+//        'Team Blue lost sector 125']
+//];
+//
+//function createEventLog(array) {
+//
+//    var list = document.getElementById('eventLog');
+//
+//
+//    for (var i = 0; i < array.length; i++) {
+//
+//        var item = document.createElement('li');
+//        item.classList.add("list-group-item");
+//
+//        item.appendChild(document.createTextNode(array[i]));
+//
+//        list.appendChild(item);
+//    }
+//
+//    return list;
+//}
+//document.getElementById('eventLog').appendChild(createEventLog(eventOptions[0]));
+
+
+$('#addEvent').click(function () {
+    var text = $('#inputEvent').val() + '<button>x</button>';
+    if (text.length) {
+        $('<li />', {html: text}).addClass("list-group-item").appendTo('#eventLog');
+    }
+    if ($('ul > li').length > 16) {
+        $('ul li:eq(1)').remove();
+    }
+});
+
+$('ul').on('click', 'button', function () {
+    $(this).parent().remove()
+});

@@ -63,7 +63,6 @@ require 'assets/fileupload/main.php';
                                     plaats de punt!</p>
 
                                 <div id='direct_upload'>
-                                    <h1>Marijn is een lekkere vent. Jasper ook. Jeremy heeft een mooie baard.</h1>
 
                                     <form>
                                         <?php

@@ -1,0 +1,50 @@
+/*Google maps*/
+#map-canvas {
+    margin: 0 auto;
+    padding: 0;
+    width: 700px;
+    height: 700px;
+    border: 5px solid #9b9b9b;
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+#eventLog {
+    float: left;
+    margin-top: 90px;
+    padding-left: 20px
+}
+
+#teambuttons{
+    float: right;
+    margin-top: 30px;
+    padding-right: 20px
+}
+
+ul > li {
+    color: #000;
+}
+
+.btn{
+    color: #ffffff;
+}
+
+.teamGreenButton{
+background-color: #0D4748;
+}
+
+.teamBlueButton{
+    background-color: #203066;
+}
+
+.teamYellowButton{
+    background-color: #FAB313;
+}
+
+.teamRedButton{
+    background-color: #A8111B;
+}
+
+.teamPurpleButton{
+    background-color: #8E3975;
+}
