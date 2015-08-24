@@ -2,9 +2,9 @@ function buildMap() {
 
 //Map variables
 
-    var minZoomLevel = 1;
+    var minZoomLevel = 10;
     var maxZoomLevel = 16;
-    var center = new google.maps.LatLng(51.924507, 4.477739);
+    var center = new google.maps.LatLng(51.918633, 4.463625);
     var testMarker = new google.maps.LatLng(51.924507, 4.477739);
     var icon = "assets/img/icon/teamRedIcon.png";
 
@@ -13,7 +13,7 @@ function buildMap() {
     function mapInit() {
         var mapOptions = {
             center: center,
-            zoom: 12,
+            zoom: 13,
             minZoom: minZoomLevel,
             maxZoom: maxZoomLevel,
             mapTypeId: "customMapStyle",
