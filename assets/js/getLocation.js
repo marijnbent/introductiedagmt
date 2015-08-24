@@ -14,6 +14,7 @@ function getLocation() {
             icon: teamIdIcon['person'],
             map: map
         });
+        setTimeout(getLocation, 15000);
         getCurrentGrid(marker)
     });
 }
