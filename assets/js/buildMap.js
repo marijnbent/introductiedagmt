@@ -3,7 +3,7 @@ function buildMap() {
 //Map variables
 
     var minZoomLevel = 12;
-    var maxZoomLevel = 14;
+    var maxZoomLevel = 17;
     var center = new google.maps.LatLng(51.918633, 4.463625);
     var testMarker = new google.maps.LatLng(51.924507, 4.477739);
     var icon = "assets/img/icon/teamRedIcon.png";

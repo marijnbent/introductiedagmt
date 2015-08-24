@@ -42,9 +42,7 @@ require 'assets/fileupload/main.php';
                 <p class="lead">Dit is de home pagina waar de game wordt gespeeld</p>
 
                 <p>Jij bent team '<?= $_SESSION['teamName']; ?>', met het id '<?= $_SESSION['teamId']; ?>'. Jullie naam
-                    is
-                    '<?= $_SESSION['teamSelfChosenTeamName']; ?>'. Jullie foto is <a
-                        href="<?= $_SESSION['teamPhoto']; ?>">hier</a> te vinden.</p>
+                    is '<?= $_SESSION['teamSelfChosenTeamName']; ?>'.</p>
 
                 <div id="map-canvas"></div>
                 <div id="interaction-section"></div>
