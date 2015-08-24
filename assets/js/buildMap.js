@@ -141,7 +141,9 @@ function buildMap() {
         });
 
         //After building the map, get the grid and build it.
+
         getGrid();
+        addFixedMarkers();
 
 
     }

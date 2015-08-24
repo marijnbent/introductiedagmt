@@ -63,7 +63,10 @@ require 'assets/fileupload/main.php';
                                     plaats de punt!</p>
 
                                 <div id='direct_upload'>
-                                    <h1>Marijn is een lekkere vent. Jasper ook. Jeremy heeft een mooie baard.</h1>
+                                    <h1>Maak een teamfoto!</h1>
+
+                                    <p><strong>Na het kiezen van een foto kan het even duren voordat deze is geüpload.
+                                            Even geduld alstublieft.</strong></p>
 
                                     <form>
                                         <?php
@@ -94,6 +97,7 @@ require 'assets/fileupload/main.php';
     <script src='assets/js/jquery.iframe-transport.js' type='text/javascript'></script>
     <script src='assets/js/jquery.fileupload.js' type='text/javascript'></script>
     <script src='assets/js/jquery.cloudinary.js' type='text/javascript'></script>
+    <script src="assets/js/fixedMarkers.js"></script>
     <script src="assets/js/firebase.js"></script>
     <script src="assets/js/buildMap.js"></script>
     <script src="assets/js/buildGrid.js"></script>

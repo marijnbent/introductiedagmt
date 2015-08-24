@@ -1,0 +1,104 @@
+{
+    "meta": {
+        "date": "24-08-15",
+        "version": "0.1"
+    },
+    "data": [
+        {
+            "name": "Langepad, Kralingse Bos, BBQ time",
+            "description": "blablabla",
+            "lat": "51.936886",
+            "lng": "4.506602"
+        },
+        {
+            "name": "Vroesenpark, BBQ time",
+            "description": "blablabla",
+            "lat": "51.931328",
+            "lng": "4.453923"
+        },
+        {
+            "name": "Euromastpark, BBQ time",
+            "description": "blablabla",
+            "lat": "51.907737",
+            "lng": "4.469489"
+        },
+        {
+            "name": "Zuiderpark, Metropolis festival",
+            "description": "blablabla",
+            "lat": "51.882826",
+            "lng": "4.493378"
+        },
+        {
+            "name": "SS Rotterdam",
+            "description": "blablabla",
+            "lat": "51.898131",
+            "lng": "4.473649"
+        },
+        {
+            "name": "Hamburg, de HAMBURGER TENT !",
+            "description": "blablabla",
+            "lat": "51.915170",
+            "lng": "4.475451"
+        },
+        {
+            "name": "Bram, de PATATKRAAM !",
+            "description": "blablabla",
+            "lat": "51.918226",
+            "lng": "4.477593"
+        },
+        {
+            "name": "Bokaal, de BIERTENT !",
+            "description": "blablabla",
+            "lat": "51.922517",
+            "lng": "4.488314"
+        },
+        {
+            "name": "Markthal, wie kent hem nog niet?",
+            "description": "blablabla",
+            "lat": "51.920117",
+            "lng": "4.487706"
+        },
+        {
+            "name": "Angelo Betti, authentieke pizza!",
+            "description": "blablabla",
+            "lat": "51.930915",
+            "lng": "4.470096"
+        },
+        {
+            "name": "Pelgrim, de Stadsbrouwerij",
+            "description": "blablabla",
+            "lat": "51.908742",
+            "lng": "4.448809"
+        },
+        {
+            "name": "Biergarten",
+            "description": "blablabla",
+            "lat": "51.925709",
+            "lng": "4.476133"
+        },
+        {
+            "name": "Bird, club",
+            "description": "blablabla",
+            "lat": "51.926615",
+            "lng": "4.478782"
+        },
+        {
+            "name": "Schieblock, bedrijfsverzamelgebouw ",
+            "description": "blablabla",
+            "lat": "51.925636",
+            "lng": "4.476737"
+        },
+        {
+            "name": "Erasmus Sciences Centre, bedrijfsverzamelgebouw",
+            "description": "blablabla",
+            "lat": "51.912419",
+            "lng": "4.429605"
+        },
+        {
+            "name": "Creative Factory, bedrijfsverzamelgebouw",
+            "description": "blablabla",
+            "lat": "51.897967",
+            "lng": "4.495081"
+        }
+    ]
+}

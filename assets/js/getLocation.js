@@ -5,10 +5,10 @@
 function getLocation() {
 
     navigator.geolocation.getCurrentPosition(function (position) {
-        //var currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
         //Beated the system!
-        currentPosition = new google.maps.LatLng(51.921665, 4.458357);
+        //currentPosition = new google.maps.LatLng(51.921665, 4.458357);
+        currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
         var marker = new google.maps.Marker({
             position: currentPosition,
             icon: teamIdIcon['person'],
@@ -50,8 +50,7 @@ function getCurrentGrid(marker) {
 }
 
 /**
- * Checks to which team the square belongs (1 = neutral)
- * @param data
+ * Checks to which team the square belongs (1 = neutral) *
  */
 
 function currentSquareTeamChecker() {
