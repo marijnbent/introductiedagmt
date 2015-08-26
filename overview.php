@@ -3,11 +3,20 @@
 //Starts session so we can use the session variables.
 session_start();
 
+require_once 'assets/php/config.php';
+require_once 'assets/php/db.php';
+
 //Checking if you're already logged in. If you are, sends you back to the secured page.
 if (!isset($_SESSION['loggedIn'])) {
     header("Location: index.php");
     exit;
 }
+
+$select = "SELECT * FROM teams
+			   WHERE `name` = '" . $teamName . "'";
+//Send query to the function mySqlConnection with the query, config settings and dbconnection.
+$result = queryToDatabase($dbLink, $select);
+$user = queryToArray($result);
 
 ?>
 <html lang="en">
