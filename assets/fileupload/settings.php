@@ -1,7 +1,7 @@
 <?php
 \Cloudinary::config(array(
-    "cloud_name" => "tunedrop",
-    "api_key" => "557355671575436",
-    "api_secret" => "fLKx6y3xDfD9qUJ7P_jBbVCE9rg"
+    "cloud_name" => "introductiedagmt",
+    "api_key" => "562529985834659",
+    "api_secret" => "74Ffmevq5-__0JtriJUqFWNwZnA"
 ));
 ?>

@@ -39,7 +39,7 @@ var myDataRef = new Firebase('https://intro1a.firebaseio.com/');
 var pointRef = myDataRef.child("points");
 var gridsRef = myDataRef.child("grids");
 
-$.cloudinary.config({ cloud_name: 'tunedrop', api_key: '557355671575436'});
+$.cloudinary.config({ cloud_name: 'introductiedagmt', api_key: '562529985834659'});
 
 $(init);
 
