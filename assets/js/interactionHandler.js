@@ -23,6 +23,7 @@ function squareInteractionEmpty() {
 
 function connectedSquaresHandler(connectedSquare) {
     if (connectedSquare == true) {
+        $(".cover-container").css("background-color", "#00CC00");
         $("#interaction-section")
             .empty()
             .html('Deze sector is aangesloten aan je netwerk. Neem nu over.')
@@ -52,8 +53,7 @@ function squareInteractionFriendly() {
 }
 
 function squareInteractionEnemy() {
-
-
+    $(".cover-container").css("background-color", "#990000");
     $("#interaction-section")
         .empty()
         .html('Deze sector is van een vijandelijk team. Wil je dit punt verwijderen?')
