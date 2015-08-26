@@ -6,7 +6,6 @@ var map;
 var gridArray = [];
 var currentGrid = {};
 var currentTeamId = getCookie('teamId');
-var currentTeamPhoto = getCookie('teamPhoto');
 var currentTeamSelfChosenTeamName = getCookie('teamSelfChosenTeamName');
 var currentPosition;
 var fixedMarkerArray = [];
@@ -17,10 +16,11 @@ var fireData;
 
 var teamIdColor = {
     2: "#A8111B", //red
-    3: "#203066", //blue
+    3: "#253875", //blue
     4: "#8E3975", //purple
-    5: "#0D4748", //green
+    5: "#2FA877", //green
     10: "#FAB313", //yellow
+    35: "#00C9FF", //cyan
     1: "#ffffff" //neutral
 };
 
@@ -30,8 +30,9 @@ var teamIdIcon = {
     4: "assets/img/icon/teamPurpleIcon.png", //pink
     5: "assets/img/icon/teamGreenIcon.png", //green
     10: "assets/img/icon/teamYellowIcon.png", //yellow
+    35: "assets/img/icon/teamYellowIcon.png", //yellow
     1: "assets/img/icon/marijnmarker.png", //neutral
-    person: "assets/img/icon/nigga.png"
+    person: "assets/img/icon/currentLocation.png"
 };
 
 //Setting up connection with Firebase
