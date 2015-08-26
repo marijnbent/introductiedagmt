@@ -12,11 +12,11 @@ if (!isset($_SESSION['loggedIn'])) {
     exit;
 }
 
-$select = "SELECT * FROM teams
-			   WHERE `name` = '" . $teamName . "'";
+$select = "SELECT * FROM score";
+
 //Send query to the function mySqlConnection with the query, config settings and dbconnection.
 $result = queryToDatabase($dbLink, $select);
-$user = queryToArray($result);
+$points = queryToArray($result);
 
 ?>
 <html lang="en">
@@ -42,7 +42,38 @@ $user = queryToArray($result);
             <div class="inner cover">
                 <h4 class="page-title">Overzicht</h4>
 
-                <p class="lead">Hier komt de overzicht kaart.</p>
+                <p class="lead">Hier staat het puntenoverzicht van de verschillende teams per kleur.</p>
+                <table class="table text-center">
+                    <tr>
+                        <th class="text-center">Teamkleur:</th>
+                        <th class="text-center">Teamscore:</th>
+                    </tr>
+                    <tr>
+                        <td>Rood</td>
+                        <td><?= $points[0]['red'] ?></td>
+                    </tr>
+                    <tr>
+                        <td>Blauw</td>
+                        <td><?= $points[0]['blue'] ?></td>
+                    </tr>
+                    <tr>
+                        <td>Groen</td>
+                        <td><?= $points[0]['green'] ?></td>
+                    </tr>
+                    <tr>
+                        <td>Paars</td>
+                        <td><?= $points[0]['purple'] ?></td>
+                    </tr>
+                    <tr>
+                        <td>Cyaan</td>
+                        <td><?= $points[0]['cyan'] ?></td>
+                    </tr>
+                    <tr>
+                        <td>Geel</td>
+                        <td><?= $points[0]['yellow'] ?></td>
+                    </tr>
+
+                </table>
             </div>
         </div>
     </div>

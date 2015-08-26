@@ -281,3 +281,9 @@ body {
 .interaction-button {
     margin-bottom: 20px;
 }
+
+/*Table styling*/
+
+#score-table{
+    text-align: center
+}
