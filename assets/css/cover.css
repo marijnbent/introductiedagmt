@@ -15,7 +15,7 @@
 }
 
 .page-title {
-    color: #e8100d;
+    color: #ffffff;
     text-transform: uppercase;
 }
 
@@ -90,7 +90,7 @@ body {
 }
 
 .inner-navbar{
-    background-color: #670a09;
+    background-color: #535353;
     padding: 5px;
     border-radius: 0 0 10px 10px;
 

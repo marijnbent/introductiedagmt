@@ -37,13 +37,7 @@ require 'assets/fileupload/main.php';
                 </div>
             </div>
             <div class="inner cover">
-                <h4 class="page-title">Kaart</h4>
-
-                <p class="lead">Dit is de home pagina waar de game wordt gespeeld</p>
-
-                <p>Jij bent team '<?= $_SESSION['teamName']; ?>', met het id '<?= $_SESSION['teamId']; ?>'. Jullie naam
-                    is '<?= $_SESSION['teamSelfChosenTeamName']; ?>'.</p>
-
+                <p>Team:  <strong><?= $_SESSION['teamName']; ?></strong> | Teamnaam: <strong><?= $_SESSION['teamSelfChosenTeamName'];?></strong></p>
                 <div id="map-canvas"></div>
                 <div id="interaction-section"></div>
                 <div id="modal-point-placer" class="modal fade">
