@@ -11,7 +11,7 @@ var currentTeamSelfChosenTeamName = getCookie('teamSelfChosenTeamName');
 var currentPosition;
 var fixedMarkerArray = [];
 var infoWindow;
-var playerMarker;
+var playerMarker = [];
 var fireData;
 
 

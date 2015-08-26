@@ -10,13 +10,17 @@ function getLocation() {
         currentPosition = new google.maps.LatLng(51.918831, 4.486649);
         //currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
+        for (var i = 0; i < playerMarker.length - 1; i++ ) {
+            playerMarker[i].setMap(null);
+        }
         var marker = new google.maps.Marker({
             position: currentPosition,
             icon: teamIdIcon['person'],
             map: map
         });
-        playerMarker.setMap(null);
-        playerMarker = marker;
+        playerMarker = [];
+        playerMarker.push(marker);
+
         setTimeout(getLocation, 10000);
         getCurrentGrid(marker)
     });
