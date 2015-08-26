@@ -12,7 +12,7 @@ if (!isset($_SESSION['loggedIn'])) {
     exit;
 }
 
-$select = "SELECT * FROM score";
+$select = "SELECT * FROM ". $score_table ."";
 
 //Send query to the function mySqlConnection with the query, config settings and dbconnection.
 $result = queryToDatabase($dbLink, $select);
