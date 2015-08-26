@@ -16,11 +16,12 @@ require 'assets/fileupload/main.php';
         <div class="cover-container">
             <div class="masthead clearfix">
                 <div class="inner-navbar">
-                    <h1 class="masthead-brand">TuneDrop</h1>
+                    <h1 class="masthead-brand text-uppercase">Intro-game</h1>
                     <nav>
                         <ul class="nav masthead-nav">
                             <li class="active text-uppercase"><a href="index.php">Kaart</a></li>
                             <li><a class="text-uppercase" href="instructions.php">Instructies</a></li>
+                            <li><a class="text-uppercase" href="overview.php">Scores</a></li>
                         </ul>
                     </nav>
                 </div>

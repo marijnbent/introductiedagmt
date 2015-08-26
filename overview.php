@@ -4,13 +4,12 @@
 session_start();
 
 //Checking if you're already logged in. If you are, sends you back to the secured page.
-if (isset($_SESSION['loggedIn'])) {
+if (!isset($_SESSION['loggedIn'])) {
     header("Location: index.php");
     exit;
 }
 
 ?>
-
 <html lang="en">
 <head>
     <?php require_once('assets/php/head.php'); ?>
@@ -21,14 +20,12 @@ if (isset($_SESSION['loggedIn'])) {
         <div class="cover-container">
             <div class="masthead clearfix">
                 <div class="inner-navbar">
-                    <h2 class="masthead-brand">TuneDrop</h2>
+                    <h1 class="masthead-brand text-uppercase">Intro-game</h1>
                     <nav>
-                        <ul class="nav masthead-nav ">
-                            <li><a href="index.php">Kaart</a></li>
-                            <li class="active"><a href="overview.php">Overzicht</a></li>
-                            <li><a href="instructions.php">Instructies</a></li>
-                            <li><a href="statistics.php">Statistieken</a></li>
-                            <li><a href="info.php">Info</a></li>
+                        <ul class="nav masthead-nav">
+                            <li><a class="text-uppercase" href="index.php">Kaart</a></li>
+                            <li><a class="text-uppercase" href="instructions.php">Instructies</a></li>
+                            <li class="active text-uppercase"><a href="overview.php">Scores</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -37,24 +34,11 @@ if (isset($_SESSION['loggedIn'])) {
                 <h4 class="page-title">Overzicht</h4>
 
                 <p class="lead">Hier komt de overzicht kaart.</p>
-
-                <div id="map-canvas"></div>
-
             </div>
-            <!--<div class="mastfoot">-->
-            <!--<div class="inner">-->
-            <!--<p>TuneDrop 2015</p>-->
-            <!--</div>-->
-            <!--</div>-->
         </div>
     </div>
 </div>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/buildMap.js"></script>
-<script src="assets/js/buildGrid.js"></script>
-<script src="assets/js/customMap.js"></script>
-<script src="assets/js/getLocation.js"></script>
-<script src="assets/js/main.js"></script>
 </body>
 </html>

@@ -22,11 +22,12 @@ if (!isset($_SESSION['loggedIn'])) {
         <div class="cover-container">
             <div class="masthead clearfix">
                 <div class="inner-navbar">
-                    <h1 class="masthead-brand">TuneDrop</h1>
+                    <h1 class="masthead-brand text-uppercase">Intro-game</h1>
                     <nav>
-                        <ul class="nav masthead-nav ">
-                            <li><a class="active text-uppercase" href="index.php">Kaart</a></li>
+                        <ul class="nav masthead-nav">
+                            <li><a class="text-uppercase" href="index.php">Kaart</a></li>
                             <li class="active text-uppercase"><a href="instructions.php">Instructies</a></li>
+                            <li><a class="text-uppercase" href="overview.php">Scores</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -47,9 +48,5 @@ if (!isset($_SESSION['loggedIn'])) {
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
 <script src="assets/js/bootstrap.min.js"></script>
-<script src="assets/js/buildMap.js"></script>
-<script src="assets/js/buildGrid.js"></script>
-<script src="assets/js/customMap.js"></script>
-<script src="assets/js/main.js"></script>
 </body>
 </html>
