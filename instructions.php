@@ -4,7 +4,7 @@
 session_start();
 
 //Checking if you're already logged in. If you are, sends you back to the secured page.
-if (isset($_SESSION['loggedIn'])) {
+if (!isset($_SESSION['loggedIn'])) {
     header("Location: index.php");
     exit;
 }
@@ -22,14 +22,11 @@ if (isset($_SESSION['loggedIn'])) {
         <div class="cover-container">
             <div class="masthead clearfix">
                 <div class="inner-navbar">
-                    <h2 class="masthead-brand">TuneDrop</h2>
+                    <h1 class="masthead-brand">TuneDrop</h1>
                     <nav>
                         <ul class="nav masthead-nav ">
-                            <li><a href="index.php">Kaart</a></li>
-                            <li><a href="overview.php">Overzicht</a></li>
-                            <li class="active"><a href="instructions.php">Instructies</a></li>
-                            <li><a href="statistics.php">Statistieken</a></li>
-                            <li><a href="info.php">Info</a></li>
+                            <li><a class="active text-uppercase" href="index.php">Kaart</a></li>
+                            <li class="active text-uppercase"><a href="instructions.php">Instructies</a></li>
                         </ul>
                     </nav>
                 </div>

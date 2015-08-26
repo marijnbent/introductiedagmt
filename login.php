@@ -87,12 +87,6 @@ if (isset($_POST['submit'])) {
 					<h2 class="masthead-brand">TuneDrop</h2>
 					<nav>
 						<ul class="nav masthead-nav ">
-							<li><a href="index.php">Kaart</a></li>
-							<li><a href="overview.php">Overzicht</a></li>
-							<li><a href="instructions.php">Instructies</a></li>
-							<li><a href="statistics.php">Statistieken</a></li>
-							<li><a href="info.php">Info</a></li>
-							<li><a href="uploadtest.php">Dat Upload</a></li>
 						</ul>
 					</nav>
 				</div>

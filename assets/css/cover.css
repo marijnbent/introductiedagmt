@@ -1,17 +1,22 @@
 /*Google maps*/
 #map-canvas {
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     width: 95%;
     height: 400px;
-    border: 5px solid #9b9b9b;
+    border: 5px solid #d1d1d1;
     border-radius: 5px;
     margin-bottom: 20px;
 
 }
 
+h1{
+    color: #ec971f;
+    font-weight: bold;
+}
+
 .masthead-brand {
-    color: #ffffff;
+    color: #ec971f;
 }
 
 .page-title {
@@ -92,8 +97,7 @@ body {
 .inner-navbar{
     background-color: #535353;
     padding: 5px;
-    border-radius: 0 0 10px 10px;
-
+    margin-bottom: 20px;
 }
 
 /* Header */
@@ -106,7 +110,6 @@ body {
     position: relative;
     display: block;
     padding-top: 10px;
-    padding-bottom: 5px;
 }
 
 .masthead-nav > li {
@@ -131,14 +134,14 @@ body {
 .masthead-nav > li > a:focus {
     background-color: transparent;
     border-bottom-color: #a9a9a9;
-    border-bottom-color: rgba(232, 16, 13, 0.25);
+    border-bottom-color: rgba(138, 109, 59, 0.25);
 }
 
 .masthead-nav > .active > a,
 .masthead-nav > .active > a:hover,
 .masthead-nav > .active > a:focus {
     color: #fff;
-    border-bottom-color: #e8100d;
+    border-bottom-color: #ec971f;
 }
 
 @media (min-width: 768px) {
@@ -229,7 +232,7 @@ body {
     font-size: 22px;
     font-weight: 400;
     padding: 10px;
-    background-color: #e8100d;
+    background-color: #ec971f;
     color: #ffffff;
     border-radius: 3px 3px 0 0;
     overflow-y: auto;
@@ -246,7 +249,7 @@ body {
 }
 
 #iw-container .iw-content {
-    color: #e8100d;
+    color: #ec971f;
     font-size: 13px;
     line-height: 18px;
     font-weight: 400;
@@ -265,7 +268,7 @@ body {
 
 .iw-footer {
     font-size: 10px;
-    color: #e8100d;
+    color: #ec971f;
     font-weight: 500;
 }
 
