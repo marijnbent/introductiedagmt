@@ -1,5 +1,4 @@
 var markers = [];
-var fireData;
 
 function firebaseInit() {
 
@@ -13,9 +12,8 @@ function requestMarkerLocations() {
     pointRef.on("value", function (snapshot) {
         //All points from firebase
         fireData = snapshot.val();
-        console.log(fireData);
-        console.log('markers.length');
-        console.log(markers.length);
+
+
 
         //Delete old markers
         for (var i = 0; i < markers.length; i++) {

@@ -9,12 +9,15 @@ function getLocation() {
         //Beated the system!
         currentPosition = new google.maps.LatLng(51.918831, 4.486649);
         //currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+
         var marker = new google.maps.Marker({
             position: currentPosition,
             icon: teamIdIcon['person'],
             map: map
         });
-        setTimeout(getLocation, 15000);
+        playerMarker.setMap(null);
+        playerMarker = marker;
+        setTimeout(getLocation, 10000);
         getCurrentGrid(marker)
     });
 }
@@ -57,13 +60,10 @@ function currentSquareTeamChecker() {
 console.log(currentGrid);
     console.log(currentGrid.teamId);
     if (currentGrid.teamId == 1) {
-        console.log('neutral');
         squareInteractionEmpty();
     } else if (currentGrid.teamId == currentTeamId) {
-        console.log('friendly');
         squareInteractionFriendly();
     } else if (currentGrid.teamId != currentTeamId) {
-        console.log('enemy');
         squareInteractionEnemy();
     } else {
         console.log('fubar');

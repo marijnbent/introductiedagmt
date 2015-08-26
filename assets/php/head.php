@@ -10,5 +10,4 @@
     <!-- Custom styles for this template -->
     <link href="assets/css/cover.css" rel="stylesheet">
     <!-- Google Maps API -->
-    <script src="https://maps.googleapis.com/maps/api/js"></script>
 

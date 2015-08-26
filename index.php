@@ -88,6 +88,7 @@ require 'assets/fileupload/main.php';
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
 
     <!-- Do we need this file? -->
     <script src="assets/js/bootstrap.min.js"></script>

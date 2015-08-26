@@ -5,12 +5,12 @@ if (!isset($_SESSION['loggedIn'])) {
     header("Location: login.php");
     exit;
 }
-require 'assets/fileupload/main.php';
+require '../assets/fileupload/main.php';
 ?>
 <html lang="en">
 <head>
-    <?php require_once('assets/php/head.php'); ?>
-    <link href="assets/css/admin.css" rel="stylesheet">
+    <?php require_once('../assets/php/head.php'); ?>
+    <link href="admin.css" rel="stylesheet">
 
 </head>
 <body>
@@ -93,21 +93,23 @@ require 'assets/fileupload/main.php';
     </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js"></script>
+
 
     <!-- Do we need this file? -->
-    <script src="assets/js/admin.js"></script>
-    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="admin.js"></script>
+    <script src="../assets/js/bootstrap.min.js"></script>
     <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
-    <script src='assets/fileupload/js/jquery.ui.widget.js' type='text/javascript'></script>
-    <script src='assets/fileupload/js/jquery.iframe-transport.js' type='text/javascript'></script>
-    <script src='assets/fileupload/js/jquery.fileupload.js' type='text/javascript'></script>
-    <script src='assets/fileupload/js/jquery.cloudinary.js' type='text/javascript'></script>
-    <script src="assets/js/firebase.js"></script>
-    <script src="assets/js/buildGrid.js"></script>
-    <script src="assets/js/customMap.js"></script>
-    <script src="assets/js/getLocation.js"></script>
-    <script src="assets/js/interactionHandler.js"></script>
-    <script src="assets/js/main.js"></script>
+    <script src='../assets/fileupload/js/jquery.ui.widget.js' type='text/javascript'></script>
+    <script src='../assets/fileupload/js/jquery.iframe-transport.js' type='text/javascript'></script>
+    <script src='../assets/fileupload/js/jquery.fileupload.js' type='text/javascript'></script>
+    <script src='../assets/fileupload/js/jquery.cloudinary.js' type='text/javascript'></script>
+    <script src="../assets/js/firebase.js"></script>
+    <script src="../assets/js/buildGrid.js"></script>
+    <script src="../assets/js/customMap.js"></script>
+    <script src="../assets/js/getLocation.js"></script>
+    <script src="../assets/js/interactionHandler.js"></script>
+    <script src="../assets/js/main.js"></script>
 
 </body>
 </html>

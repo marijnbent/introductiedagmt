@@ -11,6 +11,9 @@ var currentTeamSelfChosenTeamName = getCookie('teamSelfChosenTeamName');
 var currentPosition;
 var fixedMarkerArray = [];
 var infoWindow;
+var playerMarker;
+var fireData;
+
 
 var teamIdColor = {
     2: "#A8111B", //red
