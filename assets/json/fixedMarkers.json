@@ -93,6 +93,12 @@
             "description": "blablabla",
             "lat": "51.897967",
             "lng": "4.495081"
+        },
+        {
+            "name": "Kijk-kubus",
+            "description": "blablabla",
+            "lat": "51.919745",
+            "lng": "4.490911"
         }
     ]
 }

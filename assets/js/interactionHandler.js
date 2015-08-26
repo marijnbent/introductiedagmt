@@ -10,11 +10,9 @@ function squareInteractionEmpty() {
         if ((gridArray[i].y == currentGrid.y && (gridArray[i].x == Xmin || gridArray[i].x == Xplus)) ||
             (gridArray[i].x == currentGrid.x && (gridArray[i].y == Ymin || gridArray[i].y == Yplus))) {
             if (gridArray[i].teamId == currentTeamId) {
-                console.log('Je mag shit overnemen :-)');
                 connectedSquare = true;
                 break;
             } else {
-                console.log('Je mag geen shit overnemen >:-8 ');
             }
         }
     }
@@ -91,14 +89,6 @@ function placePointHandler() {
         var photo = obj.url;
         var gridId = currentGrid.id;
         var timestamp = new Date() / 1000;
-
-        console.log(lat + " latitude");
-        console.log(lng + " longitude");
-        console.log(teamId + " team id");
-        console.log(photo + " photo url");
-        console.log(gridId + " grid id");
-        console.log(timestamp + " timestamp");
-
 
         //Create new objects with gridId as key, so it's dynamic
         var markerInfo = {};
