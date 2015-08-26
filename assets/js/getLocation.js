@@ -7,8 +7,8 @@ function getLocation() {
     navigator.geolocation.getCurrentPosition(function (position) {
 
         //Beated the system!
-        currentPosition = new google.maps.LatLng(51.918831, 4.486649);
-        //currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+        //currentPosition = new google.maps.LatLng(51.918831, 4.486649);
+        currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
         for (var i = 0; i < playerMarker.length - 1; i++ ) {
             playerMarker[i].setMap(null);
