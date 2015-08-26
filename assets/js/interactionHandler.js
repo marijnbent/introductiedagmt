@@ -23,12 +23,13 @@ function squareInteractionEmpty() {
 
 function connectedSquaresHandler(connectedSquare) {
     if (connectedSquare == true) {
-        $(".cover-container").css("background-color", "#00CC00");
+        $(".cover-container").css("background-color", "#005200");
         $("#interaction-section")
             .empty()
-            .html('Deze sector is aangesloten aan je netwerk. Neem nu over.')
+            .append($("<h3>")
+                .text("Deze sector is aangesloten aan je netwerk. Neem nu over."))
             .append($('<button>')
-                .attr('class', 'interaction-button')
+                .attr('class', 'btn btn-lg btn-warning interaction-button')
                 .attr('id', 'newpoint')
                 .text('Take-over')
             );
@@ -37,8 +38,8 @@ function connectedSquaresHandler(connectedSquare) {
     else {
         $("#interaction-section")
             .empty()
-            .append($('<tr>')
-                .html('Deze sector is niet verbonden met je netwerk.')
+            .append($("<h3>")
+                .text("Deze sector is niet aangesloten aan je netwerk.")
             );
     }
 }
@@ -47,21 +48,23 @@ function squareInteractionFriendly() {
 
     $("#interaction-section")
         .empty()
-        .append($('<tr>')
-            .html('Deze sector hoort bij jouw netwerk. Ga snel naar een andere sector om deze aan je netwerk toe te voegen.')
-        )
+        .append($("<h3>")
+            .text("Deze sector hoort bij jouw netwerk. Ga snel naar een andere sector om deze aan je netwerk toe te voegen."))
 }
 
 function squareInteractionEnemy() {
-    $(".cover-container").css("background-color", "#990000");
+    $(".cover-container").css("background-color", "#660000");
     $("#interaction-section")
         .empty()
-        .html('Deze sector is van een vijandelijk team. Wil je dit punt verwijderen?')
+        .append($("<h3>")
+            .text("Deze sector is van een vijandelijk team. Wil je dit punt verwijderen?"))
         .append($('<button>')
-            .attr('class', 'interaction-button')
+            .attr('class', 'btn btn-lg btn-warning interaction-button')
             .attr('id', 'removepoint')
             .text('Remove this point')
         );
+
+
     $("#removepoint").on('click', removePointHandler)
 }
 

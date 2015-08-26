@@ -272,3 +272,9 @@ body {
 .iw-content > img {
     max-width: 250px;
 }
+
+/* Interaction button styling */
+
+.interaction-button {
+    margin-bottom: 20px;
+}
