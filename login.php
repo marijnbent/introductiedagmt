@@ -22,7 +22,7 @@ if (isset($_POST['submit'])) {
 	//Anti sql injection via the input field and put the values of the form to variables.
 	$teamName = dataFilter($_POST['teamName'], $dbLink);
 	//Create query to collect the email and password from database.
-	$select = "SELECT * FROM teams
+	$select = "SELECT * FROM " . $team_table . "
 			   WHERE `name` = '" . $teamName . "'";
 	//Send query to the function mySqlConnection with the query, config settings and dbconnection.
 	$result = queryToDatabase($dbLink, $select);
