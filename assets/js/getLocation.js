@@ -61,7 +61,7 @@ function getCurrentGrid(marker) {
  */
 
 function currentSquareTeamChecker() {
-    $(".cover-container").css("background-color", "#670a09");
+    $(".cover-container").css("background-color", "#333");
     if (currentGrid.teamId == 1) {
         squareInteractionEmpty();
     } else if (currentGrid.teamId == currentTeamId) {
