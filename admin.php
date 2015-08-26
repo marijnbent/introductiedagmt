@@ -98,10 +98,10 @@ require 'assets/fileupload/main.php';
     <script src="assets/js/admin.js"></script>
     <script src="assets/js/bootstrap.min.js"></script>
     <script src='https://cdn.firebase.com/js/client/2.2.1/firebase.js'></script>
-    <script src='assets/js/jquery.ui.widget.js' type='text/javascript'></script>
-    <script src='assets/js/jquery.iframe-transport.js' type='text/javascript'></script>
-    <script src='assets/js/jquery.fileupload.js' type='text/javascript'></script>
-    <script src='assets/js/jquery.cloudinary.js' type='text/javascript'></script>
+    <script src='assets/fileupload/js/jquery.ui.widget.js' type='text/javascript'></script>
+    <script src='assets/fileupload/js/jquery.iframe-transport.js' type='text/javascript'></script>
+    <script src='assets/fileupload/js/jquery.fileupload.js' type='text/javascript'></script>
+    <script src='assets/fileupload/js/jquery.cloudinary.js' type='text/javascript'></script>
     <script src="assets/js/firebase.js"></script>
     <script src="assets/js/buildGrid.js"></script>
     <script src="assets/js/customMap.js"></script>

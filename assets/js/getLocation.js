@@ -7,8 +7,8 @@ function getLocation() {
     navigator.geolocation.getCurrentPosition(function (position) {
 
         //Beated the system!
-        //currentPosition = new google.maps.LatLng(51.921665, 4.458357);
-        currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+        currentPosition = new google.maps.LatLng(51.918831, 4.486649);
+        //currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
         var marker = new google.maps.Marker({
             position: currentPosition,
             icon: teamIdIcon['person'],

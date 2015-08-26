@@ -11,8 +11,8 @@
     define([
       'jquery',
       '../../../../../../../Users/Marijn/Downloads/cloudinary-cloudinary_js-47cf97a/js/jquery.ui.widget.js',
-      'jquery.iframe-transport',
-      'jquery.fileupload'
+      'jquery.iframe-transport.js',
+      'jquery.fileupload.js'
     ], factory);
   } else {
     // Browser globals:

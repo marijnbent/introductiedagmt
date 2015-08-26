@@ -81,3 +81,7 @@ function getCookie(cname) {
     return "";
 }
 
+$('.cloudinary-fileupload').on('click', function () {
+    $('#uploading-photo').append('<img id="theImg" src="https://globalgenes.org/user/loading.gif" />');
+});
+
