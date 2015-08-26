@@ -25,13 +25,12 @@ var teamIdColor = {
 };
 
 var teamIdIcon = {
-    2: "assets/img/icon/teamRedIcon.png", //red
-    3: "assets/img/icon/teamBlueIcon.png", //blue
-    4: "assets/img/icon/teamPurpleIcon.png", //pink
-    5: "assets/img/icon/teamGreenIcon.png", //green
-    10: "assets/img/icon/teamYellowIcon.png", //yellow
-    35: "assets/img/icon/teamYellowIcon.png", //yellow
-    1: "assets/img/icon/marijnmarker.png", //neutral
+    2: "assets/img/icon/teamRedIcon2.png", //red
+    3: "assets/img/icon/teamBlueIcon2.png", //blue
+    4: "assets/img/icon/teamPurpleIcon2.png", //pink
+    5: "assets/img/icon/teamGreenIcon2.png", //green
+    10: "assets/img/icon/teamYellowIcon2.png", //yellow
+    35: "assets/img/icon/teamCyanIcon2.png", //yellow
     person: "assets/img/icon/currentLocation.png"
 };
 

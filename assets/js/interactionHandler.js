@@ -74,6 +74,7 @@ function placePointHandler() {
             })
             .on('cloudinarydone', function (e, data) {
                 $("#modal-point-placer").modal('hide');
+                $('#uploading-photo').empty();
                 var info = $('<div class="uploaded_info"/>');
                 $(info).append($('<div class="data"/>').append(prettydump(data.result)));
             });

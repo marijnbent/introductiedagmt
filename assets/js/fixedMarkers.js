@@ -20,7 +20,7 @@ function placeFixedMarker(fixedMarkerData) {
     var fixedMarker = new google.maps.Marker({
         position: position,
         map: map,
-        icon: "assets/img/icon/infoMarker.png"
+        icon: "assets/img/icon/infoMarker2.png"
     });
 
     fixedMarkerArray.push(fixedMarker);

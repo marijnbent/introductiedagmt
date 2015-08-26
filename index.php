@@ -55,18 +55,13 @@ require 'assets/fileupload/main.php';
                                 <h4 class="modal-title">Voeg een punt toe</h4>
                             </div>
                             <div class="modal-body">
-                                <p>Awesome dat je ons spel speelt!</p>
-
-                                <p>Voor dit punt moeten wij natuurlijk wel een leuke teamfoto ontvangen. Maak er een en
-                                    plaats de punt!</p>
 
                                 <div id='direct_upload'>
-                                    <h1>Maak een teamfoto!</h1>
-
-                                    <p><strong>Na het kiezen van een foto kan het even duren voordat deze is geüpload.
-                                            Even geduld alstublieft.</strong></p>
+                                    <p>Na het kiezen van een foto kan het even duren voordat deze is geüpload.
+                                            Even geduld alsjeblieft.</p>
 
                                     <form>
+                                        <p><strong>Maak een teamfoto:</strong></p>
                                         <?php
                                         # The callback URL is set to point to an HTML file on the local server which works-around restrictions
                                         # in older browsers (e.g., IE) which don't full support CORS.
