@@ -16,7 +16,7 @@ require 'assets/fileupload/main.php';
         <div class="cover-container">
             <div class="masthead clearfix">
                 <div class="inner-navbar">
-                    <h1 class="masthead-brand text-uppercase">Intro-game</h1>
+                    <h1 class="masthead-brand text-uppercase">Intro_game</h1>
                     <nav>
                         <ul class="nav masthead-nav">
                             <li class="active text-uppercase"><a href="index.php">Kaart</a></li>

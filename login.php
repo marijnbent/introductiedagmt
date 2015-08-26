@@ -84,7 +84,7 @@ if (isset($_POST['submit'])) {
 		<div class="cover-container">
 			<div class="masthead clearfix">
 				<div class="inner-navbar">
-					<h2 class="masthead-brand">TuneDrop</h2>
+					<h1 class="masthead-brand text-uppercase">Intro_game</h1>
 					<nav>
 						<ul class="nav masthead-nav ">
 						</ul>
