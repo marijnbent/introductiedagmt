@@ -8,9 +8,10 @@ var scoreRed = 0, scoreBlue = 0, scoreCyan = 0, scorePurple = 0, scoreYellow = 0
 var currentTime;
 var currentHour;
 var currentMinutes;
-var checkTimes = ['13:45', '14:00', '14:15', '14:30', '14:45', '15:00', '15:15', '15:30', '17:20', '17:25', '17:30', '17:35'];
+var checkTimes = ['13:45', '14:00', '14:15', '14:30', '14:45', '15:00', '15:15', '15:30'];
 var currentCheckTime;
 
+var fireData;
 
 init();
 
@@ -38,7 +39,6 @@ function checkTime () {
         }
     }
 
-
     $('#currentTime').empty().append('<p>Tijd: ' + currentCheckTime + '</p>');
 
 }
@@ -65,25 +65,18 @@ function checkScores () {
             if (i != 0) {
                 if (contents.teamId != 1) {
 
-                    switch (contents.teamId) {
-                        case 2:
-                            scoreRed = scoreRed + contents.value;
-                            break;
-                        case 3:
-                            scoreBlue = scoreBlue + contents.value;
-                            break;
-                        case 4:
-                            scorePurple = scorePurple + contents.value;
-                            break;
-                        case 5:
-                            scoreGreen = scoreGreen + contents.value;
-                            break;
-                        case 10:
-                            scoreYellow = scoreYellow + contents.value;
-                            break;
-                        case 35:
-                            scoreCyan = scoreCyan + contents.value;
-                            break;
+                    if (contents.teamId == 2) {
+                        scoreRed = scoreRed + contents.value;
+                    } else if (contents.teamId == 3) {
+                       scoreBlue = scoreBlue + contents.value;
+                    } else if (contents.teamId == 4) {
+                        scorePurple = scorePurple + contents.value;
+                    } else if (contents.teamId == 5) {
+                       scoreGreen = scoreGreen + contents.value;
+                    } else if (contents.teamId == 10) {
+                        scoreYellow = scoreYellow + contents.value;
+                    } else if (contents.teamId == 35) {
+                       scoreCyan = scoreCyan + contents.value;
                     }
                 }
             }
