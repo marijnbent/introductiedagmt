@@ -40,9 +40,6 @@ function init() {
             }
         });
 
-        console.log(pointGridIds);
-
-
     });
 
 
