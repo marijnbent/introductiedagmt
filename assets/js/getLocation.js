@@ -7,8 +7,8 @@ function getLocation() {
     navigator.geolocation.getCurrentPosition(function (position) {
 
         //Beated the system!
-        //currentPosition = new google.maps.LatLng(51.935790, 4.503407);
-        currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
+        currentPosition = new google.maps.LatLng(51.910958, 4.482969);
+       // currentPosition = new google.maps.LatLng(position.coords.latitude, position.coords.longitude);
 
         for (var i = 0; i < playerMarker.length; i++ ) {
             playerMarker[i].setMap(null);
@@ -62,7 +62,10 @@ function getCurrentGrid(marker) {
 
 function currentSquareTeamChecker() {
     $(".cover-container").css("background-color", "#333");
-    if (currentGrid.teamId == 1) {
+    console.log(currentGrid);
+    if (currentGrid.id == 340 || 415 || 468 || 446 || 318 || 397){
+        squareInteractionProtected();
+    } else if (currentGrid.teamId == 1) {
         squareInteractionEmpty();
     } else if (currentGrid.teamId == currentTeamId) {
         squareInteractionFriendly();

@@ -66,6 +66,13 @@ function squareInteractionEnemy() {
     $("#removepoint").on('click', removePointHandler)
 }
 
+function squareInteractionProtected(){
+    $("#interaction-section")
+        .empty()
+        .append($("<h3>")
+            .text("Deze sector is de startlocatie van een team, en kan daardoor niet worden overgenomen. Ga snel naar een ander punt en neem deze over!"))
+}
+
 function placePointHandler() {
     $("#modal-point-placer").modal('show');
 
