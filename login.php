@@ -13,7 +13,6 @@ if (isset($_SESSION['loggedIn'])) {
 	exit;
 }
 
-
 if (isset($_GET['registered'])) {
 	$message = "U kunt nu inloggen met uw zojuist ingevulde gegevens.";
 }
@@ -56,9 +55,7 @@ if (isset($_POST['submit'])) {
 			} else if ($user[0]['firstTimeLogin'] == 1) {
 
 				$_SESSION['teamSelfChosenTeamName'] = $user[0]['selfChosenTeamName'];
-				$_SESSION['teamPhoto'] = $user[0]['photo'];
 				setcookie("teamSelfChosenTeamName", $user[0]['selfChosenTeamName'], time() + 360000);  /* expire in 100 hour */
-				setcookie("teamPhoto", $user[0]['photo'], time() + 360000);  /* expire in 100 hour */
 
 
 				header("Location: index.php");
