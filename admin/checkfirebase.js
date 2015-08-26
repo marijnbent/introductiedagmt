@@ -23,11 +23,11 @@ function init() {
                             console.log(contents);
                             console.log(contents2);
                             if (i.timestamp > i2.timestamp) {
-                                singlePointRef = pointRef.child(i2);
+                                singlePointRef = pointRef.child(i);
                                 //And push it to the Firebase
                                 singlePointRef.update({active: 0});
                             } else {
-                                singlePointRef = pointRef.child(i);
+                                singlePointRef = pointRef.child(i2);
                                 //And push it to the Firebase
                                 singlePointRef.update({active: 0});
                             }
