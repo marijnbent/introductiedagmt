@@ -62,8 +62,8 @@ function getCurrentGrid(marker) {
 
 function currentSquareTeamChecker() {
     $(".cover-container").css("background-color", "#333");
-    console.log(currentGrid);
-    if (currentGrid.id == 340 || 415 || 468 || 446 || 318 || 397){
+    console.log(currentGrid.id);
+    if (currentGrid.id == 340 || currentGrid.id == 415 || currentGrid.id == 468 || currentGrid.id == 446 || currentGrid.id == 318 || currentGrid.id == 397){
         squareInteractionProtected();
     } else if (currentGrid.teamId == 1) {
         squareInteractionEmpty();
