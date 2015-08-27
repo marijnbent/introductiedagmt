@@ -5,7 +5,7 @@ var singlePointRef;
 
 function init() {
 //Setting up connection with Firebase
-    var myDataRef = new Firebase('https://tunedrop.firebaseio.com/');
+    var myDataRef = new Firebase('https://intro1a.firebaseio.com/');
     var pointRef = myDataRef.child("points");
 
     pointRef.on("value", function (snapshot) {
