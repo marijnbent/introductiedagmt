@@ -17,7 +17,7 @@ if (isset($_POST['submit'])) {
 	if (!empty($_POST['teamName'])) {
 		$name = dataFilter($_POST['teamName'], $dbLink);
 
-		$update = "UPDATE `teams` SET selfChosenTeamName = '" . $name . "', firstTimeLogin = 1 WHERE id = '" . $_SESSION['teamId'] . "'";
+		$update = "UPDATE " . $team_table . " SET selfChosenTeamName = '" . $name . "', firstTimeLogin = 1 WHERE id = '" . $_SESSION['teamId'] . "'";
 
 		queryToDatabase($dbLink, $update);
 
