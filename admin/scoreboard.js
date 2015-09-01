@@ -1,6 +1,6 @@
 
 //Setting up connection with Firebase
-var myDataRef = new Firebase('https://intro1d.firebaseio.com/');
+var myDataRef = new Firebase('https://tunedrop.firebaseio.com/');
 var gridsRef = myDataRef.child("grids");
 
 
