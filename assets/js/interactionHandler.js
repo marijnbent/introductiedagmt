@@ -66,7 +66,7 @@ function squareInteractionEnemy() {
     $("#removepoint").on('click', removePointHandler)
 }
 
-function squareInteractionProtected(){
+function squareInteractionProtected() {
     $("#interaction-section")
         .empty()
         .append($("<h3>")
@@ -96,6 +96,8 @@ function placePointHandler() {
         var photo = obj.url;
         var gridId = currentGrid.id;
         var timestamp = new Date() / 1000;
+        var currentGridTeamId = currentGrid.teamId;
+        var eventDescription = "Point captured";
 
         //Create new objects with gridId as key, so it's dynamic
         var markerInfo = {};
@@ -109,6 +111,14 @@ function placePointHandler() {
 
         //And push it to the Firebase
         gridRef.update({teamId: teamId});
+
+        var eventInfo = {};
+
+        eventInfo[timestamp] = {teamId: teamId, gridId: gridId, previousOwner: currentGridTeamId, timestamp: timestamp, event: eventDescription};
+
+        eventRef.update(eventInfo);
+
+
 
 
         //https://www.firebase.com/docs/web/api/firebase/push.html
@@ -129,7 +139,7 @@ function placePointHandler() {
 
 function removePointHandler() {
     $.each(fireData, function (nameOfObject, objectData) {
-        if(objectData.gridId == currentGrid.id && objectData.active == 1){
+        if (objectData.gridId == currentGrid.id && objectData.active == 1) {
 
             var singlePointRef = pointRef.child(nameOfObject);
 
@@ -142,6 +152,20 @@ function removePointHandler() {
 
             //And push it to the Firebase
             gridRef.update({teamId: 1});
+
+            //DATA FOR EVENTLOG
+
+            var timestamp = new Date() / 1000;
+            var gridId = currentGrid.id;
+            var teamId = currentTeamId;
+            var currentGridTeamId = currentGrid.teamId;
+            var eventDescription = "Point removed";
+
+            var eventInfo = {};
+
+            eventInfo[timestamp] = {teamId: teamId, gridId: gridId, previousOwner: currentGridTeamId, timestamp: timestamp, event: eventDescription};
+
+            eventRef.update(eventInfo);
 
             addColorToGrid(objectData.gridId, 1);
 

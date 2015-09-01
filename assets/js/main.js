@@ -38,6 +38,7 @@ var teamIdIcon = {
 var myDataRef = new Firebase('https://intro1a.firebaseio.com/');
 var pointRef = myDataRef.child("points");
 var gridsRef = myDataRef.child("grids");
+var eventRef = myDataRef.child("eventlog");
 
 $.cloudinary.config({ cloud_name: 'introductiedagmt', api_key: '562529985834659'});
 
