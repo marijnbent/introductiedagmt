@@ -96,8 +96,12 @@ function placePointHandler() {
         var photo = obj.url;
         var gridId = currentGrid.id;
         var timestamp = new Date() / 1000;
+        var eventTimestamp = new Date();
+        eventTimestamp = eventTimestamp.getTime();
         var currentGridTeamId = currentGrid.teamId;
         var eventDescription = "Point captured";
+        console.log('EVENT TIMESTAMP');
+        console.log(eventTimestamp);
 
         //Create new objects with gridId as key, so it's dynamic
         var markerInfo = {};
@@ -114,11 +118,10 @@ function placePointHandler() {
 
         var eventInfo = {};
 
-        eventInfo[timestamp] = {teamId: teamId, gridId: gridId, previousOwner: currentGridTeamId, timestamp: timestamp, event: eventDescription};
+        eventInfo[eventTimestamp] = {teamId: teamId, gridId: gridId, previousOwner: currentGridTeamId, timestamp: eventTimestamp, event: eventDescription};
+        console.log(eventInfo);
 
         eventRef.update(eventInfo);
-
-
 
 
         //https://www.firebase.com/docs/web/api/firebase/push.html
@@ -155,7 +158,8 @@ function removePointHandler() {
 
             //DATA FOR EVENTLOG
 
-            var timestamp = new Date() / 1000;
+            var eventTimestamp = new Date();
+            eventTimestamp = eventTimestamp.getTime();
             var gridId = currentGrid.id;
             var teamId = currentTeamId;
             var currentGridTeamId = currentGrid.teamId;
@@ -163,7 +167,7 @@ function removePointHandler() {
 
             var eventInfo = {};
 
-            eventInfo[timestamp] = {teamId: teamId, gridId: gridId, previousOwner: currentGridTeamId, timestamp: timestamp, event: eventDescription};
+            eventInfo[eventTimestamp] = {teamId: teamId, gridId: gridId, previousOwner: currentGridTeamId, timestamp: eventTimestamp, event: eventDescription};
 
             eventRef.update(eventInfo);
 

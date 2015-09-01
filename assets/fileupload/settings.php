@@ -1,7 +1,7 @@
 <?php
 \Cloudinary::config(array(
-    "cloud_name" => "introductiedagmt",
-    "api_key" => "562529985834659",
-    "api_secret" => "74Ffmevq5-__0JtriJUqFWNwZnA"
+    "cloud_name" => "communicatie",
+    "api_key" => "897917734541672",
+    "api_secret" => "YeXA6qIOwK4RNWgNoBdx5b8cF_Y"
 ));
 ?>

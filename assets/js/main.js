@@ -35,12 +35,12 @@ var teamIdIcon = {
 };
 
 //Setting up connection with Firebase
-var myDataRef = new Firebase('https://intro1a.firebaseio.com/');
+var myDataRef = new Firebase('https://tunedrop.firebaseio.com/');
 var pointRef = myDataRef.child("points");
 var gridsRef = myDataRef.child("grids");
 var eventRef = myDataRef.child("eventlog");
 
-$.cloudinary.config({ cloud_name: 'introductiedagmt', api_key: '562529985834659'});
+$.cloudinary.config({ cloud_name: 'communicatie', api_key: '897917734541672'});
 
 $(init);
 
