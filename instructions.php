@@ -27,7 +27,6 @@ if (!isset($_SESSION['loggedIn'])) {
 						<ul class="nav masthead-nav">
 							<li><a class="text-uppercase" href="index.php">Kaart</a></li>
 							<li class="active text-uppercase"><a href="instructions.php">Instructies</a></li>
-							<li><a class="text-uppercase" href="overview.php">Scores</a></li>
 						</ul>
 					</nav>
 				</div>
@@ -61,9 +60,12 @@ if (!isset($_SESSION['loggedIn'])) {
 </p>
 
 			<p class="lead">TIPS</p><p>
-				- Herlaad als er iets mis gaat.<br/>
+				- Herlaad als er iets mis gaat.
 
-			- Als je een foto hebt geselecteerd, wacht geduldig tot deze geüpload is.<br/>
+				- Verlies je sectoren? Anders teams kunnen punten verwijderen zonder iets te plaatsen.<br/>
+
+
+				- Als je een foto hebt geselecteerd, wacht geduldig tot deze geüpload is.<br/>
 
 			- Bekijk ook de andere pagina’s, INSTRUCTIES en SCORES.<br/>
 

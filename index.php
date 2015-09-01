@@ -21,7 +21,6 @@ require 'assets/fileupload/main.php';
                         <ul class="nav masthead-nav">
                             <li class="active text-uppercase"><a href="index.php">Kaart</a></li>
                             <li><a class="text-uppercase" href="instructions.php">Instructies</a></li>
-                            <li><a class="text-uppercase" href="overview.php">Scores</a></li>
                         </ul>
                     </nav>
                 </div>
