@@ -2,6 +2,7 @@ function addFixedMarkers() {
     for (var i = 0; i < fixedMarkerArray.length; i++) {
         fixedMarkerArray[i].setMap(null);
     }
+
     $.ajax({
         dataType: "json",
         url: 'assets/json/fixedMarkers.json',
@@ -10,6 +11,7 @@ function addFixedMarkers() {
 }
 
 function addFixedMarkersCallback(fixedMarkers) {
+
     $.each(fixedMarkers.data, function (i, fixedMarker) {
         placeFixedMarker(fixedMarker);
     });
