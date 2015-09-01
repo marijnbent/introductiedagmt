@@ -1,104 +1,189 @@
 {
-    "meta": {
-        "date": "24-08-15",
-        "version": "0.1"
+  "meta": {
+    "date": "24-08-15",
+    "version": "0.1"
+  },
+  "data": [
+    {
+      "name": "Stadion Feijenoord (de Kuip)",
+      "lat": "51.894006",
+      "lng": "4.523168"
     },
-    "data": [
-        {
-            "name": "Langepad, Kralingse Bos, BBQ time",
-            "description": "blablabla",
-            "lat": "51.936886",
-            "lng": "4.506602"
-        },
-        {
-            "name": "Vroesenpark, BBQ time",
-            "description": "blablabla",
-            "lat": "51.931328",
-            "lng": "4.453923"
-        },
-        {
-            "name": "Euromastpark, BBQ time",
-            "description": "blablabla",
-            "lat": "51.907737",
-            "lng": "4.469489"
-        },
-        {
-            "name": "Zuiderpark, Metropolis festival",
-            "description": "blablabla",
-            "lat": "51.882826",
-            "lng": "4.493378"
-        },
-        {
-            "name": "SS Rotterdam",
-            "description": "blablabla",
-            "lat": "51.898131",
-            "lng": "4.473649"
-        },
-        {
-            "name": "Hamburg, de HAMBURGER TENT !",
-            "description": "blablabla",
-            "lat": "51.915170",
-            "lng": "4.475451"
-        },
-        {
-            "name": "Bram, de PATATKRAAM !",
-            "description": "blablabla",
-            "lat": "51.918226",
-            "lng": "4.477593"
-        },
-        {
-            "name": "Bokaal, de BIERTENT !",
-            "description": "blablabla",
-            "lat": "51.922517",
-            "lng": "4.488314"
-        },
-        {
-            "name": "Markthal, wie kent hem nog niet?",
-            "description": "blablabla",
-            "lat": "51.920117",
-            "lng": "4.487706"
-        },
-        {
-            "name": "Angelo Betti, authentieke pizza!",
-            "description": "blablabla",
-            "lat": "51.930915",
-            "lng": "4.470096"
-        },
-        {
-            "name": "Pelgrim, de Stadsbrouwerij",
-            "description": "blablabla",
-            "lat": "51.908742",
-            "lng": "4.448809"
-        },
-        {
-            "name": "Biergarten",
-            "description": "blablabla",
-            "lat": "51.925709",
-            "lng": "4.476133"
-        },
-        {
-            "name": "Bird, club",
-            "description": "blablabla",
-            "lat": "51.926615",
-            "lng": "4.478782"
-        },
-        {
-            "name": "Erasmus Sciences Centre, bedrijfsverzamelgebouw",
-            "description": "blablabla",
-            "lat": "51.912419",
-            "lng": "4.429605"
-        },
-        {
-            "name": "Creative Factory, bedrijfsverzamelgebouw",
-            "description": "blablabla",
-            "lat": "51.897967",
-            "lng": "4.495081"
-        },
-        {
-            "name": "Kijk-kubus",
-            "description": "blablabla",
-            "lat": "51.919745",
-            "lng": "4.490911"
-        }
-    ]
+    {
+      "name": "Sportclub Excelsior",
+      "lat": "51.918943",
+      "lng": "4.520265"
+    },
+    {
+      "name": "Nederlands Architectuurinstituut	",
+      "lat": "51.914634",
+      "lng": "4.471120"
+    },
+    {
+      "name": "Laurenskerk",
+      "lat": "51.921264",
+      "lng": "4.484860"
+    },
+    {
+      "name": "Centraal Station",
+      "lat": "51.925216",
+      "lng": "4.469422"
+    },
+    {
+      "name": "Station Blaak"
+       ,
+      "lat": "51.920034",
+      "lng": "4.489177"
+    },
+    {
+      "name": "De Doelen",
+      "lat": "51.921988",
+      "lng": "4.472680"
+    },
+    {
+      "name": "Pathé Schouwburgplein",
+      "lat": "51.920788",
+      "lng": "4.473453"
+    },
+    {
+      "name": " Museum Boijmans Van Beuningen ",
+      "lat": "51.914238",
+      "lng": "4.473705"
+    },
+    {
+      "name": "Erasmusbrug",
+      "lat": "51.909021",
+      "lng": "4.487166"
+    },
+    {
+      "name": "Kubuswoningen",
+      "lat": "51.920310",
+      "lng": "4.490654"
+    },
+    {
+      "name": "Diergaarde Blijdorp",
+      "lat": "51.927516",
+      "lng": "4.449109"
+    },
+    {
+      "name": "Hotel New York",
+      "lat": "51.904229",
+      "lng": "4.484411"
+    },
+    {
+      "name": "Kunsthal Rotterdam",
+      "lat": "51.910644",
+      "lng": "4.473352"
+    },
+    {
+      "name": "Museumpark",
+      "lat": "51.912499",
+      "lng": "4.473302"
+    },
+    {
+      "name": "Het Witte Huis",
+      "lat": "51.918868",
+      "lng": "4.491556"
+    },
+    {
+      "name": "Nederlands fotomuseum",
+      "lat": "51.905548",
+      "lng": "4.486816"
+    },
+    {
+      "name": "Wereldmuseum Rotterdam",
+      "lat": "51.908131",
+      "lng": "4.480365"
+    },
+    {
+      "name": "Maritiem Museum",
+      "lat": "51.917772",
+      "lng": "4.482120"
+    },
+    {
+      "name": "Chabot Museum",
+      "lat": "51.914904",
+      "lng": "4.472297"
+    },
+    {
+      "name": "Van Nellefabriek ",
+      "lat": "51.922977",
+      "lng": "4.433380"
+    },
+    {
+      "name": "Mevlana Moskee",
+      "lat": "51.921483",
+      "lng": "4.441644"
+    },
+    {
+      "name": "Cruise Terminal",
+      "lat": "51.936886",
+      "lng": "4.506602"
+    },
+    {
+      "name": "Langepad, Kralingse Bos, BBQ time",
+      "lat": "51.906074",
+      "lng": "4.486693"
+    },
+    {
+      "name": "Rotown",
+      "lat": "51.917136",
+      "lng": "4.471871"
+    },
+    {
+      "name": "LanterenVenster",
+      "lat": "51.905198",
+      "lng": "4.487142"
+    },
+    {
+      "name": "Stockholm, Oude Haven ",
+      "lat": "51.920060",
+      "lng": "4.491635"
+    },
+    {
+      "name": "Koopgoot",
+      "lat": "51.920207",
+      "lng": "4.480311"
+    },
+    {
+      "name": "Blender",
+      "lat": "51.916650",
+      "lng": "4.479968"
+    },
+    {
+      "name": "Dudok",
+      "lat": "51.922107",
+      "lng": "4.482623"
+    },
+    {
+      "name": "Tante Nel",
+      "lat": "51.923502",
+      "lng": "4.487754"
+    },
+    {
+      "name": "1NUL8",
+      "lat": "51.921676",
+      "lng": "4.481566"
+    },
+    {
+      "name": "De ballentent ",
+      "lat": "51.904536",
+      "lng": "4.473819"
+    },
+    {
+      "name": "Lof der zoetheid",
+      "lat": "51.931068",
+      "lng": "4.485523"
+    },
+    {
+      "name": "Urban Espressobar ",
+      "lat": "51.922321",
+      "lng": "4.487966"
+    },
+    {
+      "name": "Hotel Bazar ",
+      "lat": "51.915906",
+      "lng": "4.478856"
+    }
+  ]
 }
