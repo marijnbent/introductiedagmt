@@ -5,17 +5,7 @@
     },
     "data": [
         {
-            "name": "Stadion Feijenoord (de Kuip)",
-            "lat": "51.894006",
-            "lng": "4.523168"
-        },
-        {
-            "name": "Sportclub Excelsior",
-            "lat": "51.918943",
-            "lng": "4.520265"
-        },
-        {
-            "name": "Nederlands Architectuurinstituut",
+            "name": "Nederlands Architectuurinstituut ",
             "lat": "51.914634",
             "lng": "4.471120"
         },
@@ -45,7 +35,7 @@
             "lng": "4.473453"
         },
         {
-            "name": " Museum Boijmans Van Beuningen ",
+            "name": " Museum Boijmans Van Beuningen",
             "lat": "51.914238",
             "lng": "4.473705"
         },
@@ -105,7 +95,7 @@
             "lng": "4.472297"
         },
         {
-            "name": "Van Nellefabriek ",
+            "name": "Van Nellefabriek",
             "lat": "51.922977",
             "lng": "4.433380"
         },
@@ -135,7 +125,7 @@
             "lng": "4.487142"
         },
         {
-            "name": "Stockholm, Oude Haven ",
+            "name": "Stockholm, Oude Haven",
             "lat": "51.920060",
             "lng": "4.491635"
         },
@@ -165,7 +155,7 @@
             "lng": "4.481566"
         },
         {
-            "name": "De ballentent ",
+            "name": "De ballentent",
             "lat": "51.904536",
             "lng": "4.473819"
         },
@@ -175,12 +165,12 @@
             "lng": "4.485523"
         },
         {
-            "name": "Urban Espressobar ",
+            "name": "Urban Espressobar",
             "lat": "51.922321",
             "lng": "4.487966"
         },
         {
-            "name": "Hotel Bazar ",
+            "name": "Hotel Bazar",
             "lat": "51.915906",
             "lng": "4.478856"
         }
