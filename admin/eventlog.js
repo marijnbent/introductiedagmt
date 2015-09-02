@@ -1,19 +1,32 @@
-var myDataRef = new Firebase('https://intro1a.firebaseio.com/');
+var myDataRef = new Firebase('https://tunedrop.firebaseio.com/');
 var eventRef = myDataRef.child("eventlog");
-var eventObject;
+
+$("table").stupidtable();
 
 
+console.log('bestand geladen');
 eventRef.on("value", function (snapshot) {
     //All points from firebase
-    eventObject = snapshot.val();
+    var eventObject = snapshot.val();
     eventHandler(eventObject);
 
 }, function (errorObject) {
     console.log("The read failed: " + errorObject.code);
 });
 
-function eventHandler(eventObject){
+function eventHandler(eventObject) {
     $.each(eventObject, function (i, objectData) {
+
+        console.log(objectData);
+        $("#eventTable").append($('<tr>')
+            .append($('<td>')
+                .text(objectData.timestamp))
+            .append($('<td>')
+                .text(objectData.event))
+            .append($('<td>')
+                .text(objectData.teamId))
+            .append($('<td>')
+                .text(objectData.previousOwner)))
 
     });
 }
