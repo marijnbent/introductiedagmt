@@ -4,7 +4,7 @@ var fireData;
 
 function init() {
 //Setting up connection with Firebase
-    var myDataRef = new Firebase('https://intro1d.firebaseio.com/');
+    var myDataRef = new Firebase('https://intro1b.firebaseio.com/');
     var pointRef = myDataRef.child("points");
 
     pointRef.on("value", function (snapshot) {

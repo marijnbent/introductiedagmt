@@ -1,4 +1,4 @@
-var myDataRef = new Firebase('https://tunedrop.firebaseio.com/');
+var myDataRef = new Firebase('https://intro1a.firebaseio.com/');
 var eventRef = myDataRef.child("eventlog");
 
 $("table").stupidtable();
