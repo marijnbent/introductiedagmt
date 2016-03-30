@@ -5,6 +5,9 @@ Dit spel is gemaakt als introductiedagspel voor de eerstejaars studenten van med
 
 Het spel is uiteindelijk twee keer gespeeld, één keer met mediatechnologen (150 studenten tegelijk) en één met communicatiestudenten (300 studenten tegelijk). 
 
+Bekijk de presentatie die vorig jaar is gebruikt om de spelers het spel uit te leggen:
+[INTRO_GAME](https://docs.google.com/presentation/d/1hM9t_Z-JwbnR9_0HVqQnlOeS103YtkVkQMc8qzqOrqM/edit#slide=id.g35f391192_04)
+
 ##Wat het is
 Het spel is gebaseerd in Rotterdam. De spelers worden in groepen verdeeld van ongeveer 8 groot. Per spel zijn er 5-6 teams. Voor de introductiedagen hebben wij dus meerdere spellen tegelijk gelanceerd. Elk team moet, door zich rond te bewegen in Rotterdam, squares overnemen. Heel Rotterdam is namelijk verdeeld in een grid.
 
