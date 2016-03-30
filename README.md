@@ -13,4 +13,5 @@ Het spel is gebaseerd in Rotterdam. De spelers worden in groepen verdeeld van on
 
 Zoals op onderstaande afbeelding te zien is, is het spel een beetje zoals risk. Je kunt landen (squars) overnemen door daar naartoe te bewegen. Als je je met jouw groep in een square bevindt kun je via de website de suare claimen. Dit moet je doen doormiddel van een foto te nemen van je hele team. Een leuke manier om de klas te leren kennen dus!
 
-![alt tag](http://url/to/img.png)
+![Overzicht van verschillende spellen tijdens introductiedag](https://static.afbeeldinguploaden.nl/1603/157760/ZcumolMr.png)
+![Controle setup](https://static.afbeeldinguploaden.nl/1603/157759/arEYSX3V.png)
