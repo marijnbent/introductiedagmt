@@ -1,13 +1,13 @@
 
 //Setting up connection with Firebase
-var myDataRef = new Firebase('https://tunedrop.firebaseio.com/');
+var myDataRef = new Firebase('https://intro1d.firebaseio.com/');
 var gridsRef = myDataRef.child("grids");
 
 var scoreRed = 0, scoreBlue = 0, scoreCyan = 0, scorePurple = 0, scoreYellow = 0, scoreGreen = 0;
 var currentTime;
 var currentHour;
 var currentMinutes;
-var checkTimes = ['13:45', '14:00', '14:15', '14:30', '14:45', '15:00', '15:15', '15:30'];
+var checkTimes = ['13:00', '13:15', '13:30', '13:45', '14:0', '14:15', '14:30', '14:45', '15:0', '15:15', '15:30'];
 var currentCheckTime;
 
 var fireData;
