@@ -32,8 +32,6 @@ function init() {
                                 singlePointRef.update({active: 0});
                             }
 
-                        } else {
-                            console.log('Geen dubbele marker.')
                         }
                     }
                 });
