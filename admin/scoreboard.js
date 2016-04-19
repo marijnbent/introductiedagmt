@@ -3,7 +3,6 @@
 var myDataRef = new Firebase('https://tunedrop.firebaseio.com/');
 var gridsRef = myDataRef.child("grids");
 
-
 var scoreRed = 0, scoreBlue = 0, scoreCyan = 0, scorePurple = 0, scoreYellow = 0, scoreGreen = 0;
 var currentTime;
 var currentHour;

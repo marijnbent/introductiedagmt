@@ -43,7 +43,6 @@ require 'assets/fileupload/main.php';
                                 <div id='direct_upload'>
                                     <p>Na het kiezen van een foto kan het even duren voordat deze is geüpload.
                                         Even geduld alsjeblieft.</p>
-
                                     <form>
                                         <p><strong>Maak een teamfoto:</strong></p>
                                         <?php

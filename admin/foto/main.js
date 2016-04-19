@@ -16,6 +16,5 @@ function init() {
             console.log(contents.photo);
             $("#foto").append('<img src="' + contents.photo + '">');
         });
-
     });
 }

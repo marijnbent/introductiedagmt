@@ -33,7 +33,6 @@ if (!isset($_SESSION['loggedIn'])) {
 			</div>
 			<div class="inner cover">
 				<h4 class="page-title">Instructies</h4>
-
 			</div>
 			<p>Rotterdam is verdeeld in een grid met sectoren.
 				Elke sector kan overgenomen worden</p>

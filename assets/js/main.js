@@ -52,7 +52,6 @@ function init(){
     buildMap();
 }
 
-//TODO: Why is this here?
 function getGrid(){
     var gridsObject;
 

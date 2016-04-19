@@ -66,6 +66,8 @@ function squareInteractionEnemy() {
     $("#removepoint").on('click', removePointHandler)
 }
 
+
+
 function squareInteractionProtected() {
     $("#interaction-section")
         .empty()

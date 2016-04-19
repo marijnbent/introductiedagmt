@@ -20,7 +20,6 @@ function getLocation() {
         });
         playerMarker = [];
         playerMarker.push(marker);
-
         setTimeout(getLocation, 10000);
         getCurrentGrid(marker)
     });

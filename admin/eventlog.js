@@ -3,7 +3,6 @@ var eventRef = myDataRef.child("eventlog");
 
 $("table").stupidtable();
 
-
 console.log('bestand geladen');
 eventRef.on("value", function (snapshot) {
     //All points from firebase
